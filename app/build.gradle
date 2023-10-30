@@ -7,12 +7,12 @@ apply from: '../ktlint.gradle'
 
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
     buildToolsVersion "29.0.3"
     defaultConfig {
         applicationId "com.thecode.infotify"
         minSdkVersion 21
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 1010
         versionName "1.0.10"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -58,10 +58,10 @@ dependencies {
 
     // DI - HILT
     implementation "com.google.dagger:hilt-android:$hilt_version"
-    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_lifecycle_version"
-    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
+//    implementation "androidx.hilt:hilt-lifecycle-viewmodel:$hilt_lifecycle_version"
+//    implementation "androidx.lifecycle:lifecycle-process:$lifecycle_version"
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
-    kapt "androidx.hilt:hilt-compiler:$hilt_lifecycle_version"
+//    kapt "androidx.hilt:hilt-compiler:$hilt_lifecycle_version"
 
     //DATA STORE
     implementation 'androidx.datastore:datastore-preferences:1.0.0-beta01'
@@ -104,8 +104,8 @@ dependencies {
     }
 
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+//    testImplementation 'junit:junit:4.13.2'
+//    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+//    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 }

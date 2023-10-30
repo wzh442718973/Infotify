@@ -67,11 +67,11 @@ class SplashActivity : AppCompatActivity() {
                         .translationXBy(width.toFloat() / 2)
                         .translationYBy(height)
                         .setListener(object : Animator.AnimatorListener {
-                            override fun onAnimationRepeat(p0: Animator?) {
+                            override fun onAnimationRepeat(p0: Animator) {
                             }
 
                             @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-                            override fun onAnimationEnd(p0: Animator?) {
+                            override fun onAnimationEnd(p0: Animator) {
                                 val intent: Intent = if (viewModel.isOnboardingCompleted()) {
                                     Intent(applicationContext, MainActivity::class.java)
                                 } else {
@@ -83,10 +83,10 @@ class SplashActivity : AppCompatActivity() {
                                 overridePendingTransition(0, 0)
                             }
 
-                            override fun onAnimationCancel(p0: Animator?) {
+                            override fun onAnimationCancel(p0: Animator) {
                             }
 
-                            override fun onAnimationStart(p0: Animator?) {
+                            override fun onAnimationStart(p0: Animator) {
                             }
                         })
                         .setInterpolator(DecelerateInterpolator(1f))

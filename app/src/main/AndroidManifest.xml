@@ -18,7 +18,8 @@
         <activity android:name=".presentation.newsdetails.NewsDetailsActivity" />
         <activity android:name=".presentation.main.MainActivity" />
         <activity android:name=".presentation.onboarding.OnboardingActivity" />
-        <activity android:name=".presentation.splash.SplashActivity">
+        <activity android:name=".presentation.splash.SplashActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
