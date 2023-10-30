@@ -8,9 +8,6 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.Fragment
-import com.thecode.aestheticdialogs.AestheticDialog
-import com.thecode.aestheticdialogs.DialogStyle
-import com.thecode.aestheticdialogs.DialogType
 import com.thecode.infotify.R
 import com.thecode.infotify.core.domain.Article
 import com.thecode.infotify.presentation.newsdetails.NewsDetailsActivity
@@ -21,18 +18,26 @@ open class BaseFragment : Fragment() {
     private val progressBar: CustomProgressBar = CustomProgressBar()
 
     fun showErrorDialog(title: String, description: String) {
-        AestheticDialog.Builder(requireActivity(), DialogStyle.RAINBOW, DialogType.ERROR)
+//        AestheticDialog.Builder(requireActivity(), DialogStyle.RAINBOW, DialogType.ERROR)
+//            .setTitle(title)
+//            .setMessage(description)
+//            .setDuration(2000)
+//            .show()
+                AlertDialog.Builder(requireActivity())
             .setTitle(title)
             .setMessage(description)
-            .setDuration(2000)
             .show()
     }
 
     fun showSuccessDialog(title: String, description: String) {
-        AestheticDialog.Builder(requireActivity(), DialogStyle.RAINBOW, DialogType.SUCCESS)
+//        AestheticDialog.Builder(requireActivity(), DialogStyle.RAINBOW, DialogType.SUCCESS)
+//            .setTitle(title)
+//            .setMessage(description)
+//            .setDuration(2000)
+//            .show()
+        AlertDialog.Builder(requireActivity())
             .setTitle(title)
             .setMessage(description)
-            .setDuration(2000)
             .show()
     }
 

@@ -83,11 +83,11 @@ class LanguageActivity : BaseActivity(), Animation.AnimationListener {
     }
 
     private fun setUpAnimation() {
-        animFadeIn = AnimationUtils.loadAnimation(
-            applicationContext,
-            R.anim.animate_fade_enter
-        )
-        animFadeIn.setAnimationListener(this)
+//        animFadeIn = AnimationUtils.loadAnimation(
+//            applicationContext,
+//            R.anim.animate_fade_enter
+//        )
+//        animFadeIn.setAnimationListener(this)
     }
 
     private fun onClickNext() {
